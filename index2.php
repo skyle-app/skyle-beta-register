@@ -34,15 +34,7 @@
 <body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
   <div class="site-wrapper overflow-hidden position-relative">
     <?php
-        $status = 'open';
-
-        if ($status == 'open') {
-            include('register/open.php');
-        } else if ($status == 'closed') {
-            include('register/closed.php');
-        } else {
-            include('register/error.php');
-        }
+      require('register/register.php');
     ?>
 </div>
 <!-- Vendor Scripts -->
@@ -64,7 +56,7 @@
 <script src="/static/js/custom.js"></script>
 <script src="/static/js/scripts.js"></script>
 <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
-<script>$("#birth").datepicker();</script>
+<script>$("#birth").datepicker({ dateFormat: 'yy/mm/dd' });</script>
 </body>
 
 </html>

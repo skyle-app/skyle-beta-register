@@ -33,21 +33,49 @@
 </head>
 <body>
   <?php
-    $tag = urlencode($_POST['tag']);
-    $succMsg = 'Your request have submitted successfully.';
-    //echo $succMsg;
-    echo '<form action="https://stibee.com/api/v1.0/lists/eZJhb3ih1rJwsF6zBrFhcmVCDSNqkg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form">';
-      echo '<input type="hidden" name="name" id="name" value="'.$_POST['name'].'">';
-      echo '<input type="hidden" name="nickname" id="nickname" value="'.$_POST['nickname'].'">';
-      echo '<input type="hidden" name="email" id="email" value="'.$_POST['email'].'">';
-      echo '<input type="hidden" name="tag" id="tag" value="'.$tag.'">';
-      echo '<input type="hidden" name="birth" id="birth" value="'.$_POST['birth'].'">';
-      echo '<input type="hidden" name="phone" id="phone" value="'.$_POST['phone'].'">';
-    echo '</form>';
-    echo '<script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/resource.stibee.com/subscribe/stb_subscribe_form.js"></script>';
-    //echo "<script>window.addEventListener('load', () => {document.body.querySelector('#stb_subscribe_form').submit();});</script>";
-    echo "<script>window.addEventListener('load', STBSUBFORM.formRequest);</script>";
-  ?>
+
+    /********************************************/
+    /**************** 캡챠 초기화 ****************/
+    /********************************************/
+
+    $data = array('secret' => "0x1f2cB520804D5ba5f5942Ff74bbF99f6d8283344",'response' => $_POST['h-captcha-response']);
+    $verify = curl_init();
+    curl_setopt($verify, CURLOPT_URL, "https://hcaptcha.com/siteverify");
+    curl_setopt($verify, CURLOPT_POST, true);
+    curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
+    curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($verify);
+    $responseData = json_decode($response);
+    if($responseData->success) {
+
+
+
+    /********************************************/
+    /*************** 주소록 데이터 ***************/
+    /********************************************/
+
+
+
+      echo '<form action="https://stibee.com/api/v1.0/lists/eZJhb3ih1rJwsF6zBrFhcmVCDSNqkg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form">'; // DUMMY
+      //echo '<form action="https://stibee.com/api/v1.0/lists/eiRLsVJybdc0zNrHPwBN8FyfWmLHBg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form">'; // REAL
+
+
+
+    ?>
+
+
+
+      <input type="hidden" name="name" id="name" value="<?php echo $_POST['name'] ?>">
+      <input type="hidden" name="email" id="email" value="<?php echo $_POST['email'] ?>">
+      <input type="hidden" name="birth" id="birth" value="<?php echo $_POST['birth'] ?>">
+      <input type="hidden" name="phone" id="phone" value="<?php echo $_POST['phone'] ?>">
+      </form>
+      <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/resource.stibee.com/subscribe/stb_subscribe_form.js"></script>
+      <script>//window.addEventListener('load', () => {document.body.querySelector('#stb_subscribe_form').submit();});</script>
+      <script>window.addEventListener('load', STBSUBFORM.formRequest);</script>
+
+
+
 
   <div class="site-wrapper overflow-hidden position-relative">
     <!-- 404 page Area -->
@@ -69,6 +97,42 @@
     </div>
   </div>
 
+
+
+  <?php
+    } else {
+  ?>
+
+
+
+  <div class="site-wrapper overflow-hidden position-relative">
+    <!-- 404 page Area -->
+    <div class="error-page" style="padding-top: 50px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10">
+            <div class="error-page-content text-center">
+              <img class="w-100" src="/static/image/preloader.gif" alt="image">
+              <h2 style="font-size: 45px;">사전 예약</h2>
+              <p><div id="stb_form_result">캡챠 인증에 실패하였습니다, 다시 시도해 주세요.</div></p>
+              <div class="back-to-btn">
+                <a href="/"><button class="btn focus-reset">OK</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <?php
+    }
+  ?>
+
+
+  
   <!-- Vendor Scripts -->
   <script src="/static/js/vendor.min.js"></script>
   <!-- Plugin's Scripts -->
@@ -90,13 +154,7 @@
   
   이름: <?php echo $_POST['name']; ?><br /><br/>
 
-  닉네임: <?php echo $_POST['nickname']; ?><br /><br/>
-
   이메일: <?php echo $_POST['email']; ?><br /><br/>
-
-  태그: <?php echo $_POST['tag']; ?><br /><br/>
-
-  태그(ESCAPE): <?php echo $tag ?>
 
   생년월일: <?php echo $_POST['birth']; ?><br /><br/>
 
