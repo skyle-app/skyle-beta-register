@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Noto Sans
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+.notosanskr * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* ==========================================================================
+   NanumSquareRound
+   ========================================================================== */
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { font-family: 'NanumSquareRound', sans-serif; }
+
+.nanumsquareround * {
+    font-family: 'NanumSquareRound';
+}
+
+/* ==========================================================================
+   IMHyemin
+   ========================================================================== */
+
+@font-face {
+    font-family: 'IM_Hyemin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IM_Hyemin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.im_hyemin * {
+    font-family: 'IM_Hyemin';
+}
