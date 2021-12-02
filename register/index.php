@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dply.app - 사전 예약 </title>
+  <title>Skyle - 사전 예약 </title>
   <link rel="shortcut icon" href="/static/image/favicon.png" type="image/x-icon">
   <!-- Bootstrap , fonts & icons  -->
   <link rel="stylesheet" href="/static/css/bootstrap.css">
