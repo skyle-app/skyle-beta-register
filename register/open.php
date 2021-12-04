@@ -32,7 +32,7 @@
                 if ($_GET['restart'] != 1) {
               ?>
                 <div class="form-group">
-                  <label>이름</label>
+                  <label>성명</label>
                   <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required>
                 </div>
                 <div class="form-group">
@@ -58,7 +58,7 @@
                 } else {
                 ?>
                 <div class="form-group">
-                  <label>이름</label>
+                  <label>성명</label>
                   <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required value="<?php echo $_GET['name']; ?>">
                 </div>
                 <div class="form-group">
