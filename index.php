@@ -56,7 +56,7 @@
 <script src="/static/js/custom.js"></script>
 <script src="/static/js/scripts.js"></script>
 <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
-<script>$("#birth").datepicker({ dateFormat: 'yy/mm/dd' });</script>
+<!--<script>$("#birth").datepicker({ dateFormat: 'yy/mm/dd' });</script>-->
 <!-- Channel Plugin Scripts -->
 <script>
   (function() {

@@ -32,20 +32,8 @@
                 if ($_GET['restart'] != 1) {
               ?>
                 <div class="form-group">
-                  <label>이름</label>
-                  <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required>
-                </div>
-                <div class="form-group">
                   <label>이메일</label>
                   <input type="email" name="email" id="email" class="form-control" placeholder="Write your email address" required>
-                </div>
-                <div class="form-group">
-                  <label>생년월일 (YYYY/MM/DD)</label>
-                  <input type="text" name="birth" id="birth" class="form-control" maxlength="10" placeholder="Write your birth" required autocomplete="off">
-                </div>
-                <div class="form-group">
-                  <label>휴대전화 번호</label>
-                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" autocomplete="off">
                 </div>
                 <!--<div class="form-group">
                   <label></label>
@@ -62,20 +50,8 @@
                 } else {
                 ?>
                 <div class="form-group">
-                  <label>이름</label>
-                  <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required value="<?php echo $_GET['name']; ?>">
-                </div>
-                <div class="form-group">
                   <label>이메일</label>
                   <input type="email" name="email" id="email" class="form-control" placeholder="Write your email address" required value="<?php echo $_GET['email']; ?>">
-                </div>
-                <div class="form-group">
-                  <label>생년월일 (YYYY/MM/DD)</label>
-                  <input type="text" name="birth" id="birth" class="form-control" maxlength="10" placeholder="Write your birth" required value="<?php echo $_GET['birth']; ?>" autocomplete="off">
-                </div>
-                <div class="form-group">
-                  <label>휴대전화 번호</label>
-                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" value="<?php echo $_GET['phone']; ?>" autocomplete="off">
                 </div>
                 <!--<div class="form-group">
                   <label></label>
