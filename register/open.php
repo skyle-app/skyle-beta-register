@@ -53,7 +53,6 @@
                 <div class="send-btn">
                   <button class="btn btn-style-04">사전예약 하기</button>
                   <p style="text-align: center;"><br>사전예약 하기를 누르면 개인정보 제공 및 이용에 동의하는 것으로 간주합니다.</p>
-                  <p style="text-align: center;"><br>Skyle에 관련된 문의는 하단 채널톡으로 문의 주세요.</p>
                 </div>
                 <?php
                 } else {
@@ -77,7 +76,6 @@
                 <div class="send-btn">
                   <button class="btn btn-style-04">사전예약 하기</button>
                   <p style="text-align: center;"><br>사전예약 하기를 누르면 개인정보 제공 및 이용에 동의하는 것으로 간주합니다.</p>
-                  <p style="text-align: center;"><br>Skyle에 관련된 문의는 하단 채널톡으로 문의 주세요.</p>
                 </div>
                 <?php
                 }
