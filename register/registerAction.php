@@ -48,23 +48,10 @@
     $responseData = json_decode($response);
     if($responseData->success) {
 
-
-
-    /********************************************/
-    /*************** 주소록 데이터 ***************/
-    /********************************************/
-
-
-
-      //echo '<form action="https://stibee.com/api/v1.0/lists/eZJhb3ih1rJwsF6zBrFhcmVCDSNqkg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form">'; // DUMMY
-      echo '<form action="https://stibee.com/api/v1.0/lists/eiRLsVJybdc0zNrHPwBN8FyfWmLHBg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form">'; // REAL
-
-
-
     ?>
 
-
-
+<!-- <form action="https://stibee.com/api/v1.0/lists/eZJhb3ih1rJwsF6zBrFhcmVCDSNqkg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form"> -->
+<form action="https://stibee.com/api/v1.0/lists/eiRLsVJybdc0zNrHPwBN8FyfWmLHBg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form">
       <input type="hidden" name="name" id="name" value="<?php echo $_POST['name'] ?>">
       <input type="hidden" name="email" id="email" value="<?php echo $_POST['email'] ?>">
       <input type="hidden" name="birth" id="birth" value="<?php echo $_POST['birth'] ?>">
