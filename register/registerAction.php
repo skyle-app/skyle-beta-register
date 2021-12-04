@@ -56,8 +56,8 @@
 
 
 
-      echo '<form action="https://stibee.com/api/v1.0/lists/eZJhb3ih1rJwsF6zBrFhcmVCDSNqkg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form">'; // DUMMY
-      //echo '<form action="https://stibee.com/api/v1.0/lists/eiRLsVJybdc0zNrHPwBN8FyfWmLHBg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form">'; // REAL
+      //echo '<form action="https://stibee.com/api/v1.0/lists/eZJhb3ih1rJwsF6zBrFhcmVCDSNqkg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form">'; // DUMMY
+      echo '<form action="https://stibee.com/api/v1.0/lists/eiRLsVJybdc0zNrHPwBN8FyfWmLHBg==/public/subscribers" method="POST" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form">'; // REAL
 
 
 
