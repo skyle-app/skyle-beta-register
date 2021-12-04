@@ -59,15 +59,15 @@
                 ?>
                 <div class="form-group">
                   <label>이름</label>
-                  <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required value="<?php echo $_GET['name']; ?>">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="이름을 입력해 주세요!" required value="<?php echo $_GET['name']; ?>">
                 </div>
                 <div class="form-group">
                   <label>이메일</label>
-                  <input type="email" name="email" id="email" class="form-control" placeholder="Write your email address" required value="<?php echo $_GET['email']; ?>">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="이메일을 입력해 주세요!" required value="<?php echo $_GET['email']; ?>">
                 </div>
                 <div class="form-group">
                   <label>휴대전화 번호</label>
-                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" value="<?php echo $_GET['phone']; ?>" autocomplete="off">
+                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="전화번호를 입력해 주세요!" maxlength="11" value="<?php echo $_GET['phone']; ?>" autocomplete="off">
                 </div>
                 <!--<div class="form-group">
                   <label></label>
