@@ -1,5 +1,5 @@
 <?php
-  $status = 'notopen';
+  $status = 'open';
 
   if ($status == 'open') {
     include('register/open.php');
