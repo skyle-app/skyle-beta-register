@@ -123,7 +123,11 @@
 
   <!--
 
+  이름: <?php echo $_POST['name']; ?><br /><br/>
+
   이메일: <?php echo $_POST['email']; ?><br /><br/>
+
+  휴대전화 번호: <?php echo $_POST['phone']; ?><br /><br/>
   
   -->
 </body>
