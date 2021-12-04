@@ -114,7 +114,7 @@
             <div class="error-page-content text-center">
               <img class="w-100" src="/static/image/preloader.gif" alt="image">
               <h2 style="font-size: 45px;">사전 예약</h2>
-              <p><div id="stb_form_result">캡챠 인증에 실패하였습니다, 다시 시도해 주세요.</div></p>
+              <p><div id="stb_form_result"><p>캡챠 인증에 실패하였습니다, 다시 시도해 주세요.</p></div></p>
               <div class="back-to-btn">
                 <a href="/"><button class="btn focus-reset">OK</button></a>
               </div>
