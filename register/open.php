@@ -33,15 +33,15 @@
               ?>
                 <div class="form-group">
                   <label>이름</label>
-                  <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="이름을 입력해 주세요!" required>
                 </div>
                 <div class="form-group">
                   <label>이메일</label>
-                  <input type="email" name="email" id="email" class="form-control" placeholder="Write your email address" required>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="이메일을 입력해 주세요!" required>
                 </div>
                 <div class="form-group">
                   <label>휴대전화 번호</label>
-                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" autocomplete="off">
+                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="전화번호를 입력해 주세요!" maxlength="11" autocomplete="off">
                 </div>
                 <!--<div class="form-group">
                   <label></label>
