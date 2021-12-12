@@ -33,15 +33,15 @@
               ?>
                 <div class="form-group">
                   <label>이름</label>
-                  <input type="text" name="name" id="name" class="form-control" placeholder="이름을 입력해 주세요!" required>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required>
                 </div>
                 <div class="form-group">
-                  <label>이메일</label>
-                  <input type="email" name="email" id="email" class="form-control" placeholder="이메일을 입력해 주세요!" required>
+                  <label>이메일 (플레이스토어 초대를 위해 지메일로 부탁드립니다.)</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Write your email address" required>
                 </div>
                 <div class="form-group">
                   <label>휴대전화 번호</label>
-                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="전화번호를 입력해 주세요!" maxlength="11" autocomplete="off">
+                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" autocomplete="off">
                 </div>
                 <!--<div class="form-group">
                   <label></label>
@@ -52,22 +52,22 @@
                 </div>
                 <div class="send-btn">
                   <button class="btn btn-style-04">사전예약 하기</button>
-                  <p style="text-align: center;"><br>사전예약 하기를 누르면 개인정보 제공 및 이용에 동의하는 것으로 간주합니다.</p>
+                  <p style="text-align: center;"><br>사전예약 하기를 누르면 <a href="https://skyle.kr/policy/prereg_privacy/" target="_blank">개인정보 처리방침</a>에 동의하는 것으로 간주합니다.</p>
                 </div>
                 <?php
                 } else {
                 ?>
                 <div class="form-group">
                   <label>이름</label>
-                  <input type="text" name="name" id="name" class="form-control" placeholder="이름을 입력해 주세요!" required value="<?php echo $_GET['name']; ?>">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Write your name" required value="<?php echo $_GET['name']; ?>">
                 </div>
                 <div class="form-group">
-                  <label>이메일</label>
-                  <input type="email" name="email" id="email" class="form-control" placeholder="이메일을 입력해 주세요!" required value="<?php echo $_GET['email']; ?>">
+                  <label>이메일 (플레이스토어 초대를 위해 지메일로 부탁드립니다.)</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Write your email address" required value="<?php echo $_GET['email']; ?>">
                 </div>
                 <div class="form-group">
                   <label>휴대전화 번호</label>
-                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="전화번호를 입력해 주세요!" maxlength="11" value="<?php echo $_GET['phone']; ?>" autocomplete="off">
+                  <input type="tel" pattern="010[0-9]{8}" name="phone" id="phone" class="form-control" placeholder="Write your phone number" maxlength="11" value="<?php echo $_GET['phone']; ?>" autocomplete="off">
                 </div>
                 <!--<div class="form-group">
                   <label></label>
@@ -75,7 +75,7 @@
                 </div>-->
                 <div class="send-btn">
                   <button class="btn btn-style-04">사전예약 하기</button>
-                  <p style="text-align: center;"><br>사전예약 하기를 누르면 개인정보 제공 및 이용에 동의하는 것으로 간주합니다.</p>
+                  <p style="text-align: center;"><br>사전예약 하기를 누르면 <a href="https://skyle.kr/policy/prereg_privacy/" target="_blank">개인정보 처리방침</a>에 동의하는 것으로 간주합니다.</p>
                 </div>
                 <?php
                 }
